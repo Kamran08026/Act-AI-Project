@@ -1,0 +1,6 @@
+{
+  "name": "PrepMind AI",
+  "description": "AI-powered interactive interview & presentation pitch coach with live recruiter simulation, STAR framing engine, and deep performance analytics.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
