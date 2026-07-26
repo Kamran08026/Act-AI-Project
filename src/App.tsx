@@ -191,12 +191,21 @@ export default function App() {
 
       {/* Main Content Area */}
       <main className="flex-1">
-              {/* Professional Profile Header */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', width: '100%', padding: '16px 24px 0px 24px', boxSizing: 'border-box' }}>
+                    {/* Aligned Banner Line and Profile Badge Row */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', padding: '16px 24px 0px 24px', boxSizing: 'border-box' }}>
+        
+        {/* Next Gen Banner Line (Left Side) */}
+        <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20">
+          <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
+          <span className="text-xs font-medium text-indigo-300">Next-Gen Interactive AI Interviewer & Pitch Panel</span>
+        </div>
+
+        {/* Professional Profile Badge (Right Side) */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '6px 14px', backgroundColor: '#1e293b', borderRadius: '30px', border: '1px solid #334155' }}>
           <img src={profileImg} alt="Kamran Khan" style={{ width: '36px', height: '36px', borderRadius: '50%', objectFit: 'cover', objectPosition: 'top center', transform: 'scale(1.05)' }} />
           <span style={{ color: '#f8fafc', fontSize: '0.9rem', fontWeight: '500', paddingRight: '4px' }}>Kamran Khan</span>
         </div>
+
       </div>
 
       {activeTab === 'interview' && (
@@ -204,14 +213,8 @@ export default function App() {
           {!activeSession ? (
             /* Welcome Hero Landing */
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-2 pb-16 text-center space-y-12">
-            {!activeSession ? (
-              /* Welcome Hero Landing */
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center space-y-12">
-                <div className="space-y-4 max-w-3xl mx-auto">
-                  <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold">
-                    <Sparkles className="w-3.5 h-3.5" />
-                    <span>Next-Gen Interactive AI Interviewer & Pitch Panel</span>
-                  </div>
+              <div className="space-y-4 max-w-3xl mx-auto">
+
 
                   <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-slate-100 leading-none">
                     Ace Your Next Interview with{' '}
