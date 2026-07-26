@@ -198,6 +198,7 @@ export default function App() {
           <span style={{ color: '#f8fafc', fontSize: '0.9rem', fontWeight: '500', paddingRight: '4px' }}>Kamran Khan</span>
         </div>
       </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
 
 
 
