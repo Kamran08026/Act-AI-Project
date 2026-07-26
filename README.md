@@ -1,4 +1,5 @@
-# My Website Name
+# PrepMind AI
+Interview & Pitch Studio
 
 Ace Your Next Interview with AI Recruiter Simulations
 
