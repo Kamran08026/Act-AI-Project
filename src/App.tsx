@@ -191,13 +191,14 @@ export default function App() {
 
       {/* Main Content Area */}
       <main className="flex-1">
-                    {/* Professional Profile Header */}
+                          {/* Professional Profile Header */}
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', width: '100%', padding: '16px 24px', boxSizing: 'border-box' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '6px 14px', backgroundColor: '#1e293b', borderRadius: '30px', border: '1px solid #334155' }}>
-          <img src={profileImg} alt="Kamran Khan" style={{ width: '36px', height: '36px', borderRadius: '50%', objectFit: 'cover', objectPosition: 'top center', transform: 'scale(0.95)', border: '1px solid #3b82f6' }} />
+          <img src="https://github.com" alt="Kamran Khan" style={{ width: '36px', height: '36px', borderRadius: '50%', objectFit: 'cover' }} />
           <span style={{ color: '#f8fafc', fontSize: '0.9rem', fontWeight: '500', paddingRight: '4px' }}>Kamran Khan</span>
         </div>
       </div>
+
 
 
         {activeTab === 'interview' && (
