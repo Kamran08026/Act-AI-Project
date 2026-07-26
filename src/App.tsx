@@ -1,3 +1,4 @@
+import profileImg from '../Profile Photo.jpg';
 import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { SessionSetupModal } from './components/SessionSetupModal';
@@ -190,6 +191,12 @@ export default function App() {
 
       {/* Main Content Area */}
       <main className="flex-1">
+              {/* Profile Section Added Here */}
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px', padding: '20px', backgroundColor: '#1e293b', borderRadius: '12px', width: 'fit-content', margin: '20px auto' }}>
+        <img src={profileImg} alt="Kamran" style={{ width: '100px', height: '100px', borderRadius: '50%', objectFit: 'cover', border: '3px solid #3b82f6' }} />
+        <span style={{ color: '#ffffff', fontSize: '1.2rem', fontWeight: '600' }}>Kamran</span>
+      </div>
+
         {activeTab === 'interview' && (
           <>
             {!activeSession ? (
