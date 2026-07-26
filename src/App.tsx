@@ -191,13 +191,14 @@ export default function App() {
 
       {/* Main Content Area */}
       <main className="flex-1">
-                              {/* Professional Profile Header Tighter Layout */}
-      <div style={{ display: 'flex', justifyContent: 'flex-end', width: '100%', padding: '0px 24px 8px 24px', boxSizing: 'border-box' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '4px 12px', backgroundColor: '#1e293b', borderRadius: '30px', border: '1px solid #334155' }}>
-          <img src="https://github.com" alt="Kamran Khan" style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover' }} />
-          <span style={{ color: '#f8fafc', fontSize: '0.85rem', fontWeight: '500' }}>Kamran Khan</span>
+                                    {/* Professional Profile Header - Restored Layout */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', width: '100%', padding: '16px 24px', boxSizing: 'border-box' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '6px 14px', backgroundColor: '#1e293b', borderRadius: '30px', border: '1px solid #334155' }}>
+          <img src={profileImg} alt="Kamran Khan" style={{ width: '36px', height: '36px', borderRadius: '50%', objectFit: 'cover', objectPosition: 'top center', transform: 'scale(1.05)' }} />
+          <span style={{ color: '#f8fafc', fontSize: '0.9rem', fontWeight: '500', paddingRight: '4px' }}>Kamran Khan</span>
         </div>
       </div>
+
 
 
 
