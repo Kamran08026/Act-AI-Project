@@ -199,12 +199,18 @@ export default function App() {
           <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
           <span className="text-xs font-medium text-indigo-300">Next-Gen Interactive AI Interviewer & Pitch Panel</span>
         </div>
-
-        {/* Professional Profile Badge (Right Side) */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '6px 14px', backgroundColor: '#1e293b', borderRadius: '30px', border: '1px solid #334155' }}>
+        {/* Clickable Professional Profile Badge (Right Side) */}
+        <a 
+          href="https://linkedin.com" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '6px 14px', backgroundColor: '#1e293b', borderRadius: '30px', border: '1px solid #334155', textDecoration: 'none', cursor: 'pointer', transition: 'all 0.2s' }}
+          onMouseEnter={(e) => e.currentTarget.style.borderColor = '#3b82f6'}
+          onMouseLeave={(e) => e.currentTarget.style.borderColor = '#334155'}
+        >
           <img src={profileImg} alt="Kamran Khan" style={{ width: '36px', height: '36px', borderRadius: '50%', objectFit: 'cover', objectPosition: 'top center', transform: 'scale(1.05)' }} />
           <span style={{ color: '#f8fafc', fontSize: '0.9rem', fontWeight: '500', paddingRight: '4px' }}>Kamran Khan</span>
-        </div>
+        </a>
 
       </div>
 
