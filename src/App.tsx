@@ -191,20 +191,19 @@ export default function App() {
 
       {/* Main Content Area */}
       <main className="flex-1">
-                                    {/* Professional Profile Header - Restored Layout */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', width: '100%', padding: '16px 24px', boxSizing: 'border-box' }}>
+              {/* Professional Profile Header */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', width: '100%', padding: '16px 24px 0px 24px', boxSizing: 'border-box' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '6px 14px', backgroundColor: '#1e293b', borderRadius: '30px', border: '1px solid #334155' }}>
           <img src={profileImg} alt="Kamran Khan" style={{ width: '36px', height: '36px', borderRadius: '50%', objectFit: 'cover', objectPosition: 'top center', transform: 'scale(1.05)' }} />
           <span style={{ color: '#f8fafc', fontSize: '0.9rem', fontWeight: '500', paddingRight: '4px' }}>Kamran Khan</span>
         </div>
       </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
 
-
-
-
-        {activeTab === 'interview' && (
-          <>
+      {activeTab === 'interview' && (
+        <>
+          {!activeSession ? (
+            /* Welcome Hero Landing */
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-2 pb-16 text-center space-y-12">
             {!activeSession ? (
               /* Welcome Hero Landing */
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center space-y-12">
